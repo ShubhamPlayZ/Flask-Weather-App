@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css')}}">
+    <link rel = "stylesheet" href = "http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
+    <title>Weather App</title>
+</head>
+<body>
+    <header>
+        <h1 id="header-text"><i class="fa fa-sun-o" aria-hidden="true"></i>Weather App</h1>
+    </header>
+        <section id="container">
+        <div id="main-div">
+            <h2>Put in a city name and we'll get weather data on it</h2>
+            <form method="POST" action="/temp">
+                <input type="text" id='city-input' name="city-input" placeholder="City Name">
+                <input type="submit" id='submit-btn' value="Check Weather">
+            </form>
+            <hr id="hr1">
+            {% block content %}
+            {% endblock %}
+            </div>
+    </section>
+</body>
+</html>

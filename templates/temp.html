@@ -1,0 +1,31 @@
+{% extends "index.html" %}
+
+{% block content %}
+<div id = "sections-container">
+    <h3 class="Tab">Weather</h3>
+    <h3 class="Tab">Temperature</h3>
+    <h3 class="Tab">Wind</h3>
+</div>
+<hr id="hr2">
+<section id ='weather'>
+    <h1>Current Weather</h1>
+    <h3>{{wtr}}</h3>
+</section>
+<section id ="temperature">
+    <ul>
+        <li>Temperature: <span>{{temp}}&#8451;</span></li>
+        <li>Minimum Temperature: <span>{{min_temp}}&#8451;</span></li>
+        <li>Maximum Temperature: <span>{{max_temp}}&#8451;</span></li>
+    </ul>
+</section>
+<section id="wind">
+    <ul>
+        <li>Pressure: <span>{{pressure}}%</span></li>
+        <li>Humidity: <span>{{humidity}}%</span></li>
+        <li>Speed: <span>{{speed}}km/h</span></li>
+    </ul>
+</section>
+<script src="{{url_for('static', filename='js/index.js')}}"></script>
+</div>
+
+{% endblock %}
