@@ -12,12 +12,12 @@ When inputted with a city name,
 it will show the following data
 
 * Weather
-![](img1.png)
+![](imgs/img1.png)
 
 * Temperatures
-![](img2.png)
+![](imgs/img2.png)
 
 * Wind
-![](img3.png)
+![](imgs/img3.png)
 
 __Note__: If you are going to try out this app then remember that i have removed the API key. So you have to get your own API key from openweathermap
